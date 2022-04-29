@@ -21,12 +21,12 @@
                 <article>
                     <section class="side-bar">
                         <a href="/app/profile/account">
-                        	<div class="side-bar-item">
+                        	<div class="side-bar-item clicked">
                             	<h3>프로필 편집</h3>
                        		</div>
                         </a>
                         <a href="/app/profile/account/password">
-                        	<div class="side-bar-item clicked">
+                        	<div class="side-bar-item">
                             	<h3>비밀번호 변경</h3>
                        		</div>
                         </a>
@@ -56,7 +56,7 @@
                         </div>
                     </section>
                     <section class="profile-box">
-                        <form class="profile-box-form1">
+                        <form class="profile-box-form1" enctype="multipart/form-data">
                             <div class="box-item-left">
                                 <div class="profile-img-round">
                                     <img src="/app/static/images/instagram_mainlogo.png">
@@ -64,6 +64,7 @@
                             </div>
                             <div class="box-item-right">
                                 <h1 class="profile-username">jihun</h1>
+                                <input type="file" class="profile-img-file" name="file">
                                 <div class="update-img-button">프로필 사진 바꾸기</div>
                             </div>
                         </form>
